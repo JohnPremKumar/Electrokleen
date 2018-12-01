@@ -1,5 +1,4 @@
 
-mainControl();
 function mainControl(){
   m1 = new XMLHttpRequest();
   m1.open('GET',"https://thingspeak.com/channels/636567/field/1/last",true);
