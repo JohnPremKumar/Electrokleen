@@ -1,4 +1,4 @@
-<script>
+
 mainControl();
 function mainControl(){
   m1 = new XMLHttpRequest();
@@ -223,5 +223,3 @@ function reset(){
     }
   }  
 }
-
-</script>
