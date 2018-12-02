@@ -34,8 +34,8 @@ function startTime(){
             sDate = sFullTime[0];
             sTime = sFullTime[1].split("+");
             sTime = sTime[0];
-            //document.getElementById("Date").innerHTML = "Date: " + sDate;
-            //document.getElementById("Time").innerHTML = "Time: " + sTime;
+            document.getElementById("Date").innerHTML = "Date: " + sDate;
+            document.getElementById("Time").innerHTML = "Time: " + sTime;
         }
     }
 }
@@ -199,28 +199,28 @@ function displayOn(){
     x2.open('GET',"https://api.thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field2=" + months + "a" +
     				days + "a" + hours + "a" + minutes + "",true);
     x2.send();
-    //document.getElementById("timer").innerHTML = months + " Months " + days + " Days " 
-     // + hours + " Hours " + minutes + "Minutes";
-	var onjson = {start_date : sDate,
+    document.getElementById("timer").innerHTML = months + " Months " + days + " Days " 
+     + hours + " Hours " + minutes + "Minutes";
+	/*var onjson = {start_date : sDate,
 		      start_time : sTime,
 		      months : months,
 		      days : days,
 		      hours : hours,
 		      minutes : minutes};
-	document.getElementById("json").innerHTML = JSON.stringify(onjson);
+	document.getElementById("json").innerHTML = JSON.stringify(onjson);*/
     
 }
 
 function displayOff(){
-  //document.getElementById("timer").innerHTML = dynamicOffsetMonth + " Months " + dynamicOffsetDay + " Days " 
-    //  + dynamicOffsetHour + " Hours " + dynamicOffsetMinute + "Minutes";
-	var offjson = {start_date : sDate,
+  document.getElementById("timer").innerHTML = dynamicOffsetMonth + " Months " + dynamicOffsetDay + " Days " 
+      + dynamicOffsetHour + " Hours " + dynamicOffsetMinute + "Minutes";
+	/*var offjson = {start_date : sDate,
 		      start_time : sTime,
 		      months : dynamicOffsetMonth,
 		      days : dynamicOffsetDay,
 		      hours : dynamicOffsetHour,
 		      minutes : dynamicOffsetMinute};
-	document.getElementById("json").innerHTML = JSON.stringify(offjson)
+	document.getElementById("json").innerHTML = JSON.stringify(offjson);*/
 }
   
 function reset(){
