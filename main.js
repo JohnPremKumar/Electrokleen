@@ -21,6 +21,8 @@ function flow(){
     	computeDynamicOffset();
         setTimeout(displayOff,4000);
     }
+	setTimeout(function(){
+   		window.location.reload(1);}, 30000);
 }
 
 function startTime(){
