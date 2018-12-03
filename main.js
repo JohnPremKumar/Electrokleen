@@ -27,7 +27,7 @@ function flow(){
 
 function startTime(){
 	var s1 = new XMLHttpRequest();
-    s1.open('GET',"https://api.thingspeak.com/channels/636567/fields/2/last.json?timezone=Asia%2FKolkata",true);
+    s1.open('GET',"https://thingspeak.com/channels/636567/fields/2/last.json?timezone=Asia%2FKolkata",true);
     s1.send();
     s1.onreadystatechange = function(){
     	if(s1.readyState == 4 && s1.status == 200){
@@ -43,7 +43,7 @@ function startTime(){
 }
 function currentTime(){
   xhr = new XMLHttpRequest();
-  xhr.open('GET', "https://api.thingspeak.com/channels/636567/fields/1/last.json?timezone=Asia%2FKolkata", true);
+  xhr.open('GET', "https://thingspeak.com/channels/636567/fields/1/last.json?timezone=Asia%2FKolkata", true);
   xhr.send();
  
   xhr.onreadystatechange = function () {
@@ -179,7 +179,7 @@ function computeDynamicOffset(){
             dynamicOffsetMinute = dynamicOffset[3];
             //alert(dynamicOffsetMinute);
             var s2 = new XMLHttpRequest();
-            s2.open('GET',"https://api.thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field1=" + dynamicOffset + "",true);
+            s2.open('GET',"https://thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field1=" + dynamicOffset + "",true);
             s2.send();
         }
     }
@@ -198,7 +198,7 @@ function displayOn(){
         months++;
     }
     var x2 = new XMLHttpRequest();
-    x2.open('GET',"https://api.thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field2=" + months + "a" +
+    x2.open('GET',"https://thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field2=" + months + "a" +
     				days + "a" + hours + "a" + minutes + "",true);
     x2.send();
     document.getElementById("timer").innerHTML = months + " Months " + days + " Days " 
@@ -227,10 +227,10 @@ function displayOff(){
   
 function reset(){
   var r1 = new XMLHttpRequest();
-  r1.open('GET',"https://api.thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field1=0a0a0a0",true);
+  r1.open('GET',"https://thingspeak.com/update?api_key=YJC84SZZQBQNJWAU&field1=0a0a0a0",true);
   r1.send();
   var r2 = new XMLHttpRequest();
-  r2.open('GET',"https://api.thingspeak.com/update?api_key=4GQF2VWSAXPNQQF1&field1=1&field2=1",true);
+  r2.open('GET',"https://thingspeak.com/update?api_key=4GQF2VWSAXPNQQF1&field1=1&field2=1",true);
   r2.send();
   r2.onreadystatechange = function(){
     if(r2.readyState == 4 && r2.status == 200){
