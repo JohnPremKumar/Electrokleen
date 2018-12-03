@@ -1,11 +1,9 @@
 <style>
-  body{
-    background-image: url("https://johnpremkumar.github.io/Electrokleen/LokwkLM.jpg");
-    background-color: #cccccc;
-    background-size:100%;
+  body {
+    background-color: #edc77f;
   }
-  h1{
-    font-size: 20px;
+  h1 {
+    font-size: 10px;
     text-align: center;
     color: rgba(0,0,0,0.6);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
@@ -16,10 +14,10 @@
     left: 45%;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 5px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
+    font-size: 10px;
   }
 </style>
