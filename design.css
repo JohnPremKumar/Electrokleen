@@ -5,7 +5,7 @@
     background-size:100%;
   }
   h1{
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     color: rgba(0,0,0,0.6);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
@@ -20,6 +20,6 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 40px;
+    font-size: 20px;
   }
 </style>
